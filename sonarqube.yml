@@ -49,11 +49,6 @@ metadata:
 spec:
   serviceName: sonarqube-h
   replicas: 1
-  updateStrategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
   selector:
     matchLabels:
       app: sonarqube
